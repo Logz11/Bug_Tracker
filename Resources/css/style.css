@@ -38,6 +38,7 @@ section {
     padding: 80px 0;
 }
 
+
 .box {
     padding: 1%;
 }
@@ -47,19 +48,37 @@ section {
 /* --------------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Bug_Tracker/Resources/images/Scarab_Header.jpg);
     height: 100vh;
+}
+
+header.review-page {
+    height: auto;
+    width:auto;
+}
+.landing-page {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Bug_Tracker/Resources/images/Scarab_Header.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
-.hero-text-box {
-    position: absolute;
+.hero-text-box{
     width: 1140px;
+}
+
+.landing-page .hero-text-box {
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.hero-text-box.reviews{
+    position: relative;
+    text-align: center;
+    top: -8%;
+    right: 5%;
+    letter-spacing: 8px;
 }
 
 /* --------------------------------------------- */
@@ -129,6 +148,7 @@ h2 {
     font-weight: 300;
 }
 
+
 /* --------------------------------------------- */
 /* NAV BAR */
 /* --------------------------------------------- */
@@ -138,12 +158,18 @@ h2 {
     width: auto;
     float: left;
     margin-top: 20px;
+    display: inline-block;
 }
 
 .main-nav {
     float: right;
     list-style: none;
     margin-top: 55px;
+}
+
+.review-page nav{
+    padding-bottom: 5px;
+    background-color: rgb(41, 41, 41);
 }
 
 .main-nav li {
@@ -163,6 +189,16 @@ h2 {
 .main-nav li a:hover,
 .main-nav li a:active {
     border-bottom: 2px goldenrod solid;
+}
+
+nav h3{
+    color:white;
+}
+
+.logo-box h3 {
+    float:left;
+    transform: translate(25%, 210%);
+    letter-spacing: 5px;
 }
 
 /* --------------------------------------------- */
@@ -215,6 +251,87 @@ p.features {
 p.long-copy {
     padding-top:1%;
     padding-bottom: 2%;
+}
+/* --------------------------------------------- */
+/* SECTION - REVIEWS - SLIDER */
+/* --------------------------------------------- */
+
+section.reviews {
+    padding-top: 20px;
+}
+
+/* --------------------------------------------- */
+/* SECTION - REVIEWS - SLIDER */
+/* --------------------------------------------- */
+
+blockquote:before {
+    display: block;
+    content: "\201C";
+    font-size: 500%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    color: goldenrod;
+}
+
+blockquote {
+    padding: 2%;
+    margin-top: 8%;
+    font-style: italic;
+    line-height: 145%;
+    position: relative;
+}
+
+cite {
+    width: 90px;
+    height: 90px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+
+cite img {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+
+cite img.flat-bottom{
+    width: auto;
+    height: 100%;
+}
+
+#slider {
+    width: 500px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#slider .slides{
+    display: block;
+    width: 6000px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 500px;
+    height: 300px;
+}
+
+div#slider {
+    margin-left: 17%;
+}
+
+li p {
+    display: inline-block;
+    transform:translate(40%, -150%);
 }
 /* --------------------------------------------- */
 /* FOOTER */
