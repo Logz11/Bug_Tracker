@@ -47,19 +47,14 @@ section {
 /* --------------------------------------------- */
 
 header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/Bug_Tracker/Resources/images/Scarab_Header.jpg);
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
 }
 
 .hero-text-box {
     position: absolute;
     width: 1140px;
-    top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform:translate(-30%, -40%);
 }
 
 /* --------------------------------------------- */
@@ -120,8 +115,8 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 350%;
-    font-weight: 100;
+    font-size: 300%;
+    font-weight: 300;
 }
 
 h2 {
@@ -169,14 +164,11 @@ h2 {
 /* SECTION - FEATURES */
 /* --------------------------------------------- */
 
-section.section-features{
-    padding-top: 15px;
-    padding-bottom:30px;
-}
+
 
 .icon-big {
     color: goldenrod;
-    font-size: 250%;
+    font-size: 300%;
     padding-left: 43%;
 }
 
@@ -189,18 +181,17 @@ section h2 {
     font-size: 300%;
     font-weight: 100;
     letter-spacing: 3px;
-    padding-bottom: 2%;
 }
 
-section h2:after {
+/*section h2:after {
     display: block;
     height: 2px;
     background-color:goldenrod;
     content: " ";
     width: 400px;
     margin: 0 auto;
-    margin-top: 3%;
-}
+    margin-top: 15px;
+}*/
 
 section h3 {
     letter-spacing: 5px;
@@ -213,7 +204,7 @@ p.features {
 }
 
 p.long-copy {
-    padding-top:1%;
+    padding-top:2%;
     padding-bottom: 2%;
 }
 /* --------------------------------------------- */
@@ -264,4 +255,38 @@ a.Facebook:visited{
 a.Facebook:hover,
 a.Facebook:active{
     color:#838383;
+}
+
+/* --------------------------------------------- */
+/* IMAGE SLIDER */
+/* --------------------------------------------- */
+
+#slider {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides{
+    display:block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}
+
+div#slider {
+    margin-left: 12.5%;
+}
+
+.slides {
+    height:400px;
+    width:720px;
 }
