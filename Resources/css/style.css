@@ -243,6 +243,10 @@ section h3 {
     padding-bottom: 0.75%;
 }
 
+h4 {
+    text-align: center;
+}
+
 
 p.features {
     line-height: 150%;
@@ -251,14 +255,67 @@ p.features {
 p.long-copy {
     padding-top:1%;
     padding-bottom: 2%;
+    line-height: 142.50%;
 }
 /* --------------------------------------------- */
-/* SECTION - REVIEWS - SLIDER */
+/* SECTION - REVIEWS*/
 /* --------------------------------------------- */
 
 section.reviews {
     padding-top: 20px;
 }
+
+.reviews p.long-copy {
+    padding-bottom: 5%;
+}
+
+.company-list {
+    width:auto;
+}
+
+.company-list ol {
+    counter-reset: li;
+    list-style: none;
+    list-style: decimal;
+    margin-bottom: 4em;
+    padding: 0;
+}
+
+.company-list li {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: 1em 0;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    padding-left: 100px;
+    background-color: rgb(218, 218, 218);
+    transition: background-color 0.2s;
+    font-weight: 500;
+}
+
+.company-list li:hover {
+    background-color: goldenrod;
+}
+
+.company-list li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -.3959em;
+    left: -.25em;
+    background-color: goldenrod;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .35em solid rgb(218, 218, 218);;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    color: #fff;
+}
+
 
 /* --------------------------------------------- */
 /* SECTION - REVIEWS - SLIDER */
@@ -308,6 +365,12 @@ cite img.flat-bottom{
     width: 500px;
     height: 300px;
     overflow: hidden;
+    box-shadow: 10px 10px goldenrod transparent;
+    transition: box-shadow 0.2s;
+}
+
+#slider:hover{
+    box-shadow: 0 4px 8px 0 rgba(218, 165, 32, 0.2);
 }
 
 #slider .slides{
@@ -323,10 +386,6 @@ cite img.flat-bottom{
     list-style-type: none;
     width: 500px;
     height: 300px;
-}
-
-div#slider {
-    margin-left: 17%;
 }
 
 li p {
@@ -354,8 +413,18 @@ footer ul li {
     float: left;
 }
 
-.social-links {
+.social-links li a:link,
+.social-links li a:visited {
     float: right;
+    color:#5f5f5f;
+    transition: color .02s;
+    padding-left: 20px;
+    padding-right: 0px;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    color:#838383;
 }
 
 .footer-nav li a:link,
@@ -367,18 +436,5 @@ footer ul li {
 
 .footer-nav li a:hover,
 .footer-nav li a:active{
-    color:#838383;
-}
-
-
-a.Facebook:link,
-a.Facebook:visited{
-    color:#5f5f5f;
-    transition: color .02s;
-    padding-right: 20px;
-}
-
-a.Facebook:hover,
-a.Facebook:active{
     color:#838383;
 }
