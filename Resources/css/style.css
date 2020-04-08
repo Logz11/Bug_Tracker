@@ -144,7 +144,6 @@ h2 {
     width: auto;
     float: left;
     margin-top: 20px;
-    display: inline-block;
 }
 
 .main-nav {
@@ -377,18 +376,97 @@ li p {
 
 form {
     text-align: center;
-    background-color: gray;
+    background-color: rgb(41, 41, 41);
     width: 25%;
-    margin: 0 auto;
-    padding: 2.5% 0 10% 0;
+    margin: 8% auto 0 auto;
+    padding: 2.5% 0 2% 0;
 }
 
-input:first-of-type{
+form span:not(#remember-me-text){
+    background-color: goldenrod;
+    margin-right: -6px;
+    height: 100%;
+    width: auto;
+    color: #fff;
+    border-radius: 3px 0 0 3px;
+}
+
+form span.ion-ios-person {
+    padding: 8.25px 9px 12px 9px;
+}
+
+form span.ion-ios-lock {
+    padding: 8.5px 9px 11.75px 9px;
+}
+
+input.login:not(#remember-me) {
+    border-style: none;
+    margin-top: 10%;
+    height: 40px;
+    font-size: 80%;
+    border-radius: 0 3px 3px 0;
+}
+
+input#remember-me {
     margin-top: 5%;
+    margin-left: -25%;
 }
 
-form span {
+span#remember-me-text {
+    margin-left: 2%;
+    font-size: 80%;
+    color: rgb(218, 218, 218);
+    font-weight: 400;
+    cursor: default;
+}
+
+input.login#submit {
+    background-color: goldenrod;
+    transition: background-color 0.2s;
+    color: #fff;
+    width: 73.75%;
+    border-radius: 3px;
+}
+
+input#submit:hover,
+input#submit:active {
+    background-color: rgb(197, 149, 29);
+    color: white;
+}
+
+form img {
+    height: 200px;
+    width: auto;
+    border: solid 15px #fff;
+    border-radius: 200px;
+    transform:translate(0, -65%);
+    margin-bottom: -50%;
+}
+
+form p {
+    cursor: default;
+    color: rgb(218, 218, 218);
+    margin-top: 30%;
+}
+
+form p,
+form a:link,
+form a:visited {
+    display: inline-block;
+    font-size: 80%;
+    font-weight: 400;
+    
+}
+
+form a:link,
+form a:visited {
     color: goldenrod;
+    transition: color 0.2s;
+}
+
+form a:hover,
+form a:active {
+    color: rgb(197, 149, 29);
 }
 
 
